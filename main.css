@@ -1,0 +1,1032 @@
+body {
+  margin: 0;
+  height: auto;
+  width: 100%;
+}
+h5,
+h1,
+ul,
+h3,
+h2,
+img {
+  margin: 0;
+  padding: 0;
+}
+.section-fit {
+  padding: 2em 0;
+  width: 80%;
+  margin: 0 auto;
+}
+header {
+  height: max-content;
+  background: linear-gradient(rgba(15, 15, 15, 0.8), rgba(15, 15, 15, 0.8)),
+    url("/images/banner-main.png");
+}
+header nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+.logo > * {
+  font-size: 1.5em;
+}
+header .logo span {
+  color: #daa505;
+}
+header .logo h5 {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+header nav ul {
+  align-items: center;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+header main {
+  text-align: center;
+}
+header main h3,
+h1,
+h5 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+header main h3 {
+  color: #daa505;
+  font-size: 2.1875em;
+}
+header main h1 {
+  font-size: 4.5em;
+  color: #ffffff;
+}
+header main h5 {
+  letter-spacing: 15px;
+  color: #ffffff;
+  font-size: 1.25em;
+}
+header main img {
+  position: relative;
+  padding: 4em 0;
+}
+body > header > nav > button > i.closeIcon.fa-solid.fa-xmark {
+  display: none;
+}
+.hamburger {
+  display: none;
+  align-self: center;
+  background-color: transparent;
+  border: 0;
+  color: #ffffff;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  right: 0;
+}
+.menu {
+  position: fixed;
+  transition: transform 0.2s;
+  transform: translateX(100%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+  background-color: #ffc61a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.showMenu {
+  transform: translateX(0);
+}
+/* Book a cab  */
+.btn {
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.84375em;
+}
+.book-now {
+  background-color: #ffc61a;
+}
+.main-book-now {
+  padding: 7em 0 !important;
+}
+.book-now main {
+  display: flex;
+  justify-content: space-between;
+}
+.body-order {
+  padding: 1em 2em;
+  display: grid;
+  grid-gap: 3em;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #ffffff;
+}
+.book-car-info {
+  width: 60%;
+}
+.book-car-info h2 {
+  font-size: 2.1875em;
+}
+.book-car-info h1 {
+  width: 65%;
+  font-size: 3.125em;
+}
+.book-car-info p {
+  width: 75%;
+}
+.read-more-btn {
+  background-color: #131313;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+.order-header {
+  padding: 1em 2em;
+  background-color: #171717;
+}
+.order-header h1 {
+  color: #ffffff;
+}
+.order-header span {
+  color: #ffc61a;
+}
+.body-order input {
+  background: #ffffff;
+  border: none;
+  border-bottom: 3px solid #e4e4e4;
+}
+#choose {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+::placeholder {
+  font-weight: bold;
+  color: #171717;
+}
+.submit-btn {
+  border-radius: 10px;
+  padding: 10px 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #131313;
+}
+.submit-order {
+  align-self: flex-end;
+}
+/* our tariffs  */
+.our-tariffs main {
+  background-color: #ffffff;
+}
+.our-tariffs {
+  text-align: center;
+}
+.our-tariffs h2 {
+  color: #ffc61a;
+  text-transform: uppercase;
+  font-size: 2.1875em;
+}
+.our-tariffs h1 {
+  font-size: 2.74625em;
+  color: #000000;
+  text-transform: uppercase;
+}
+.tarrifs-container {
+  padding: 8em 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.tariff-cards {
+  width: 30%;
+  background-color: #f5f4f2;
+}
+.tariff-cards img {
+  position: relative;
+  bottom: 5em;
+}
+.cards-description {
+  position: relative;
+  bottom: 3em;
+  padding: 0 2em;
+}
+.cards-description button {
+  margin-top: 1em;
+  background-color: #ffc61a;
+  color: #000000;
+  border-radius: 10px;
+  padding: 10px 1em;
+}
+.cards-description h1 {
+  font-size: 1.90125em;
+}
+.cards-description p {
+  font-size: 1.125em;
+  width: 100%;
+}
+.cards-description h2 {
+  font-size: 2.74625em;
+  color: #ffc61a;
+}
+.card-2 {
+  position: relative;
+  background-color: #ffc61a;
+}
+.card-2 h2 {
+  color: #121212;
+}
+.card-2 button {
+  background-color: #1b1b1b;
+  color: #ffffff;
+}
+.star-container {
+  position: relative;
+}
+.star-container img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.we-do-best {
+  background-image: url(/images/we-do-best.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.best-services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 3em;
+}
+.best-service-items {
+  padding: 3em 0;
+  display: flex;
+  align-items: center;
+}
+.services-info {
+  margin-left: 2em;
+}
+.services-info h1 {
+  color: #ffc61a;
+}
+.services-info p {
+  width: 80%;
+  color: #ffffff;
+}
+.titles-container {
+  text-align: center;
+}
+.titles-container h2 {
+  color: #ffc61a;
+  font-size: 2.1875em;
+  text-transform: uppercase;
+}
+.titles-container h1 {
+  font-size: 2.74625em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.btn-yellow {
+  background-color: #ffc61a;
+  color: #000000;
+  width: max-content;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin: 2em auto;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+/* donwload ap psection  */
+.download-app {
+  position: relative;
+}
+.download-app img {
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+.download-info {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+.download-app .titles-container h1 {
+  color: #000000;
+}
+.download-buttons {
+  display: flex;
+}
+.apple-btn {
+  margin-left: 1em;
+}
+.button-download {
+  border: 0;
+  padding: 10px 1em;
+  border-radius: 1.2em;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+}
+.download-description {
+  margin: 3em 0;
+}
+.download-description h1,
+p {
+  width: 55%;
+}
+.download-description p {
+  margin: 3em 0;
+}
+.button-download span {
+  text-transform: uppercase;
+  font-size: 10px;
+  width: 100%;
+}
+.button-download h1 {
+  text-transform: none;
+  margin-left: 12px;
+  text-align: left;
+  width: 100%;
+  font-size: 0.8em;
+}
+/* testimonials  */
+.testimonials {
+  background-image: url(/images/testimonials.png);
+}
+.card-testimonials {
+  background-color: #040707;
+  width: 40%;
+  border-radius: 3em;
+  padding: 2em 3em;
+}
+.card-testimonials p {
+  color: #ffffff;
+  width: 80%;
+}
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+.testimonial-img img {
+  border-radius: 100%;
+}
+.testimonial-img {
+  align-items: center;
+  display: flex;
+}
+.testimonial-img h1 {
+  margin-left: 10px;
+  color: #ffc61a;
+}
+.testimonial-img span {
+  color: #ffffff;
+}
+/* call us  */
+.call-us {
+  background-color: #ffc61a;
+}
+.call-us {
+  padding: 2em 0;
+  text-align: center;
+}
+.call-us h2 {
+  font-size: 2.1875em;
+}
+.call-us h1 {
+  font-size: 4.79125em;
+}
+/* foooter */
+footer {
+  background-image: url(/images/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-items {
+  letter-spacing: 1.5px;
+  width: 30%;
+}
+.footer-items h1 {
+  font-size: 1.5625em;
+  color: #ffffff;
+}
+.footer-items p {
+  color: #ffffff;
+  width: 80%;
+  letter-spacing: 1px;
+}
+
+.hr-yellow {
+  border: 10px solid #ffc61a;
+  width: 90%;
+  margin: 1.3em 0;
+}
+.social-footer {
+  width: 30%;
+  font-size: 1.25em;
+  display: flex;
+  justify-content: space-between;
+}
+.social-footer i {
+  color: #ffc61a;
+}
+.footer-item-2 a {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #ffc61a;
+}
+.footer-item-2 i {
+  color: #ffffff;
+  font-size: 1.875em;
+}
+
+.fa-apple {
+  position: relative;
+  right: 6px;
+}
+
+.footer-item-3 {
+  display: flex;
+  flex-direction: column;
+}
+.footer-item-3 i {
+  margin: 12px 0;
+  display: flex;
+  color: #ffffff;
+}
+.footer-item-3 span {
+  color: #ffffff;
+  margin-left: 1em;
+}
+.copyright {
+  padding: 1em 0;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.68);
+}
+.copyright p {
+  width: 100%;
+  margin: 0;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .section-fit h1 {
+    font-size: inherit;
+  }
+  .hamburger {
+    display: block;
+  }
+  .logo h1 {
+    text-align: left;
+  }
+  header nav {
+    padding: 1em 0 2em 0 !important;
+  }
+  header nav ul {
+    display: none;
+  }
+  .book-cab-now main {
+    padding: 0;
+  }
+  .main-book-now {
+    padding: 2em 0 !important;
+  }
+  .main-book-now h1 {
+    font-size: 3em;
+  }
+  header .logo h5 {
+    font-size: inherit;
+  }
+  header main h1 {
+    font-size: 1em;
+  }
+  header main h3 {
+    font-size: 2em;
+  }
+
+  header main h5 {
+    letter-spacing: 2px;
+    font-size: inherit;
+  }
+  header main img {
+    padding: 4em 0 2em 0;
+  }
+  .book-now main {
+    display: block;
+  }
+  .book-car-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .book-car-info h1 {
+    width: 100%;
+  }
+  .book-car-info p {
+    width: 100%;
+  }
+  .body-order {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.2em;
+  }
+  .submit-order {
+    margin: 2em 0 0 0;
+  }
+  .tarrifs-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0 0 0;
+  }
+  .tariff-cards {
+    margin: 4em 0 4em 0;
+    width: 100%;
+  }
+  .card-3 {
+    margin-bottom: 0;
+  }
+  .download-app main {
+    padding-bottom: 0;
+  }
+  .tariff-cards img {
+    width: 95%;
+  }
+  .cards-description p {
+    width: 100%;
+  }
+  .best-services {
+    display: flex;
+    flex-direction: column;
+  }
+  .services-info p {
+    width: 100%;
+  }
+  .btn-yellow {
+    margin: 0 auto;
+  }
+  .download-app img {
+    display: none;
+  }
+  .download-info {
+    flex-direction: column;
+    width: 100%;
+  }
+  .download-description h1,
+  p {
+    width: 100%;
+  }
+  .download-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .button-download {
+    margin: 1em 0;
+  }
+  .apple-btn {
+    margin-top: 0;
+  }
+  .download-description p {
+    margin: 1em 0;
+  }
+  .titles-container h1 {
+    font-size: inherit;
+  }
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-testimonials {
+    padding: 10px;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+  .card-testimonials {
+    padding: 10px;
+  }
+  .card-testimonials p {
+    text-align: center;
+  }
+  .cards-description {
+    padding: 0 1em;
+  }
+  .btn {
+    width: max-content;
+    font-size: 1em;
+  }
+  .card-testimonials p {
+    width: 100%;
+  }
+  .star-container img {
+    width: 30%;
+  }
+  .testimonial-img {
+    flex-direction: column;
+  }
+  .testimonial-img h1 {
+    margin: 0;
+  }
+  .submit-btn {
+    background-color: #131313;
+    border-radius: 10px;
+    padding: 10px 10px;
+  }
+  .testimonial-1 {
+    margin-top: 2em;
+  }
+  .best-services {
+    padding: 1em 0;
+  }
+  .best-service-items {
+    flex-direction: column;
+    padding: 1em 0;
+  }
+  .service-img {
+    margin-bottom: 1em;
+  }
+  .service-1 {
+    margin-top: 1em;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-items {
+    margin: 2em 0;
+    width: 100%;
+  }
+  .footer-items p {
+    width: 100%;
+  }
+  .social-footer {
+    width: 100%;
+  }
+  .footer-item-2 a {
+    width: 60%;
+  }
+  .footer-item-3 span {
+    line-height: 1.5;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .book-cab-now img {
+    width: 80%;
+  }
+  .hamburger {
+    display: block;
+  }
+  header nav {
+    padding: 1em 0 0 0 !important;
+  }
+  header nav ul {
+    display: none;
+  }
+  .book-cab-now main {
+    padding: 0;
+  }
+  header main h1 {
+    font-size: 1em;
+  }
+  .main-book-now h1 {
+    font-size: 3em;
+  }
+  header .logo h5 {
+    font-size: inherit;
+  }
+  .main-book-now {
+    padding: 3em 0 !important;
+  }
+  header main h1 {
+    font-size: 1em;
+  }
+  header main h3 {
+    font-size: 2em;
+  }
+  header main h5 {
+    letter-spacing: 2px;
+  }
+  header main img {
+    padding: 4em 0 2em 0;
+  }
+  .logo h5 {
+    font-size: inherit;
+  }
+  .book-now main {
+    display: block;
+  }
+  .book-car-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .book-car-info h1 {
+    width: 100%;
+  }
+  .book-car-info p {
+    width: 100%;
+  }
+  .body-order {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.2em;
+  }
+  .submit-order {
+    margin: 2em 0 0 0;
+  }
+  .tarrifs-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0 0 0;
+  }
+  .tariff-cards {
+    margin: 4em 0 4em 0;
+    width: 100%;
+  }
+  .card-3 {
+    margin-bottom: 0;
+  }
+  .download-app main {
+    padding-bottom: 0;
+  }
+  .tariff-cards img {
+    width: 95%;
+  }
+  .cards-description p {
+    width: 100%;
+  }
+  .best-services {
+    display: flex;
+    flex-direction: column;
+  }
+  .services-info p {
+    width: 100%;
+  }
+  .btn-yellow {
+    margin: 0 auto;
+  }
+  .download-app img {
+    display: none;
+  }
+  .download-info {
+    flex-direction: column;
+    width: 100%;
+  }
+  .download-description h1,
+  p {
+    width: 100%;
+  }
+  .download-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .apple-btn {
+    margin-top: 0;
+  }
+  .download-description p {
+    margin: 1em 0;
+  }
+  .titles-container h1 {
+    font-size: inherit;
+  }
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+  }
+  .card-testimonials {
+    width: 100%;
+    padding: 10px;
+    flex-flow: row wrap;
+  }
+
+  .cards-description {
+    padding: 0 1em;
+  }
+  .btn {
+    width: max-content;
+    font-size: 1em;
+  }
+  .card-testimonials p {
+    width: 100%;
+    text-align: center;
+  }
+  .star-container img {
+    width: 30%;
+  }
+  .testimonial-img {
+    flex-direction: column;
+  }
+  .testimonial-img h1 {
+    margin: 0;
+    text-align: center;
+  }
+  .submit-btn {
+    background-color: #131313;
+    border-radius: 10px;
+    padding: 10px 10px;
+  }
+  .testimonial-1 {
+    margin-top: 2em;
+  }
+  .best-services {
+    padding: 1em 0;
+  }
+  .best-service-items {
+    flex-direction: column;
+    padding: 1em 0;
+  }
+  .service-img {
+    margin-bottom: 1em;
+  }
+  .service-1 {
+    margin-top: 1em;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-items {
+    margin: 2em 0;
+    width: 100%;
+  }
+  .footer-items p {
+    width: 100%;
+  }
+  .social-footer {
+    width: 100%;
+  }
+  .footer-item-2 a {
+    width: 60%;
+  }
+  .footer-item-3 span {
+    line-height: 1.5;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  header nav {
+    padding-bottom: 0 !important;
+  }
+  .hamburger {
+    display: block;
+  }
+  header nav ul {
+    display: none;
+  }
+  header .logo h5 {
+    font-size: inherit;
+  }
+  .book-cab-now main img {
+    display: none;
+  }
+  .book-now main {
+    flex-direction: column;
+  }
+  .book-car-info {
+    width: 100%;
+  }
+  .submit-order {
+    width: 100%;
+    margin-top: 2em;
+  }
+  .book-car-info h1 {
+    width: 100%;
+  }
+  .book-car-info p {
+    width: 100%;
+  }
+  .tarrifs-container {
+    flex-direction: column;
+  }
+  .tariff-cards {
+    width: 100%;
+    margin: 4em 0;
+  }
+  .cards-description p {
+    width: 100%;
+  }
+  .card-1 {
+    margin: 0 0 4em 0;
+  }
+  .download-app img {
+    display: none;
+  }
+  .download-info {
+    width: 100%;
+  }
+  .download-description h1,
+  p {
+    width: 100%;
+  }
+  .download-buttons {
+    justify-content: space-between;
+  }
+  .card-testimonials {
+    width: 80%;
+  }
+  .testimonial-container {
+    flex-direction: column;
+  }
+  .testimonial-1 {
+    margin-top: 1em;
+  }
+  .card-testimonials p {
+    width: 100%;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+  .footer-items {
+    width: 100%;
+  }
+  .footer-item-3 {
+    margin: 2em 0 0 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  header nav {
+    justify-content: space-between;
+  }
+  header nav ul {
+    align-items: center;
+    width: 65%;
+  }
+  header main img {
+    width: 40%;
+    bottom: 2em;
+  }
+  .book-now main {
+    flex-direction: column;
+  }
+  .book-car-info {
+    width: 100%;
+  }
+  .submit-order {
+    align-self: flex-start;
+    margin-top: 2em;
+  }
+  .tarrifs-container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tariff-cards {
+    width: 100%;
+  }
+  .card-3 {
+    margin-top: 6em;
+    align-self: center;
+  }
+  .cards-description p {
+    width: 100%;
+  }
+  .download-app img {
+    display: none;
+  }
+  .download-description h1,
+  p {
+    width: 100%;
+  }
+  .card-testimonials p {
+    width: 100%;
+  }
+  .card-testimonials {
+    width: 35%;
+  }
+  .footer-items p {
+    width: 100%;
+  }
+  .footer-item-2 a {
+    width: 100%;
+  }
+}
